@@ -40,7 +40,7 @@ def get_input():
     # Quantity
     quantity = input("Enter quantity (e.g. 0.002): ").strip()
 
-    # Price — only for LIMIT / STOP
+    # Price only for LIMIT / STOP
     price = None
     stop_price = None
 

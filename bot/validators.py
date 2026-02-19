@@ -33,7 +33,7 @@ def validate_order(symbol, side, order_type, quantity, price=None, stop_price=No
                 errors.append("Price must be a valid number.")
 
     if order_type.upper() == "STOP" and stop_price is None:
-        errors.append("--stop-price is required for STOP orders.")
+        errors.append("Stop Price is required for STOP orders.")
 
     if errors:
         raise ValueError("\n".join(errors))
